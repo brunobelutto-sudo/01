@@ -1,0 +1,230 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║        🎨 GUIA DE IMPORTAÇÃO - TEMPLATE JSON ELEMENTOR PEAK FRESH 🎨          ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+📋 SUMÁRIO DO ARQUIVO JSON:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Arquivo: elementor-template-peak-fresh.json
+Tipo: Template de página completa para Elementor
+Estrutura: Seções prontas com widgets configurados
+Customização: 100% editável no editor visual do Elementor
+
+
+📱 SEÇÕES INCLUÍDAS NO TEMPLATE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 🎯 HEADER (Cabeçalho)
+   - Logo da Peak Fresh
+   - Menu de navegação
+   - Fundo escuro premium (rgb 26, 24, 35)
+   - Responsivo para mobile
+
+2. 🖼️ HERO SECTION (Seção Principal)
+   - Imagem de fundo grande
+   - Título principal: "Açaí Premium Peak Fresh"
+   - Subtítulo descritivo
+   - Botão com link para o cardápio
+   - Overlay com transparência
+   - Altura mínima: 600px
+
+3. ✨ SEÇÃO DE BENEFÍCIOS
+   - 4 colunas com ícones
+   - Ingredientes Naturais
+   - Qualidade Premium
+   - Entrega Rápida
+   - Garantia Total
+   - Ícones coloridos em roxo (#7C2BBF)
+
+4. 🍆 SEÇÃO DE CARDÁPIO
+   - 3 produtos principais em grade
+   - Imagens dos produtos
+   - Descrição de cada item
+   - Preços para 300ml e 500ml
+   - Nomes dos produtos
+   - Link âncora para navegação
+
+5. 🎁 SEÇÃO DE PROMOÇÃO
+   - Fundo gradiente roxo
+   - Destaque de promoção
+   - Botão WhatsApp
+   - Call to action atraente
+   - Cores vibrantes
+
+6. 👣 FOOTER (Rodapé)
+   - Copyright
+   - Contato WhatsApp
+   - Cores escuras
+   - Responsivo
+
+
+🔧 COMO USAR ESTE ARQUIVO JSON:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPÇÃO 1: Importar como Template (RECOMENDADO)
+═════════════════════════════════════════════
+
+1. No WordPress, vá para: Painel → Elementor → Modelos
+2. Clique em "Importar Modelos"
+3. Selecione o arquivo: elementor-template-peak-fresh.json
+4. Clique em "Importar"
+5. O template aparecerá na sua biblioteca
+6. Crie uma nova página e aplique o template
+7. Abra no editor Elementor para customizar
+
+
+OPÇÃO 2: Copiar e Colar JSON (ALTERNATIVA)
+═════════════════════════════════════════════
+
+1. Abra o arquivo JSON em um editor de texto
+2. Copie TODO o conteúdo
+3. No Elementor, crie uma nova página
+4. Abra o editor visual
+5. Clique em Hambuger Menu (☰)
+6. Selecione "Ferramentas" → "Exportar/Importar"
+7. Cole o JSON e clique "Importar"
+
+
+⚙️ CUSTOMIZANDO AS CORES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+No editor Elementor, você pode editar:
+
+🎨 COR PRIMÁRIA (Roxo):
+   Atual: #7C2BBF
+   Onde mudar:
+   - Ícones nos benefícios
+   - Gradiente da seção de promoção
+   - Links e botões
+
+🎨 COR DE FUNDO ESCURO:
+   Atual: #1a1823 (rgb 26, 24, 35)
+   Onde mudar:
+   - Header
+   - Seção de benefícios
+   - Seção do cardápio
+   - Pode ajustar no Elementor facilmente
+
+🎨 COR DE TEXTO:
+   Branco principal: #FFFFFF
+   Texto secundário: #B0B0B0
+   Clique em qualquer texto no Elementor para mudar
+
+
+📝 EDITAR TEXTOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Clique 2x no texto no editor Elementor
+2. Digite o novo texto
+3. Atualizações acontecem em tempo real
+4. Não precisa salvar = tudo é automático
+
+
+📸 TROCAR IMAGENS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Clique na imagem no editor
+2. Pressione (e) para editar
+3. Selecione "Trocar imagem"
+4. Upload a nova imagem da sua galeria
+5. Pronto! A imagem é atualizada
+
+Imagens esperadas:
+- /images/hero-acai.png (Hero section)
+- /images/avalanche-negra-logo.png (Cardápio)
+- /images/morangotella-logo.png (Cardápio)
+- /images/bananatella-logo.png (Cardápio)
+
+
+🔗 EDITAR LINKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Clique no botão para editar
+2. Vá para a seção "Link"
+3. Altere o URL para:
+   - WhatsApp: https://wa.me/5585988223355?text=Olá!
+   - Página interna: #nome-da-secao
+   - Página externa: https://exemplo.com.br
+
+
+🎯 ELEMENTOS QUE VOCÊ PODE REMOVER:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✗ Não gosta da seção de benefícios?
+  Clique na seção e pressione Delete
+
+✗ Quer remover a promoção?
+  Selecione a seção e apague
+
+✗ Quer editar apenas parte da estrutura?
+  Edite o que quiser - tudo é customizável!
+
+
+🔐 MANTER RESPONSIVIDADE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Template já vem responsivo
+✓ Teste em mobile: Clique no ícone de "Responsividade" no Elementor
+✓ Ajustes automáticos para:
+  - Celular (até 768px)
+  - Tablet (768px - 1024px)
+  - Desktop (acima de 1024px)
+
+
+⭐ DICAS DE OURO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Sempre salve antes de grandes mudanças (Ctrl+S)
+2. Use o painel Histórico para desfazer ações
+3. Teste em mobile ANTES de publicar
+4. Mantenha consistência visual de cores
+5. Use o "Inspetor de Elementos" para checar estrutura
+6. Não mude os ID dos elementos se for reutilizar
+
+
+📚 WIDGETS DISPONÍVEIS NO TEMPLATE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Heading (Títulos)
+✓ Text Editor (Texto)
+✓ Button (Botões)
+✓ Image (Imagens)
+✓ Icon (Ícones)
+✓ Container (Divisores)
+✓ Columns (Colunas em grid)
+
+
+🆘 ERROS COMUNS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "Arquivo não carrega"
+   → Verifique se o arquivo está corrompido
+   → Tente abrir com um editor de texto diferente
+   → Confirme que é um JSON válido
+
+❌ "Imagens não aparecem"
+   → Confirme os caminhos: /images/nome-do-arquivo.png
+   → Envie as imagens para a pasta /images do WordPress
+   → Atualize os caminhos no Elementor
+
+❌ "Cores estranhas"
+   → Elementor pode ter sobrescrito as cores
+   → Redefinir clicando no botão "Reset" no painel
+   → Reaplique as cores manualmente
+
+
+📞 SUPORTE FINAL:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Este template foi criado para ser 100% independente.
+Você tem total controle e liberdade para mudar qualquer coisa!
+
+Lembre-se: No Elementor, tudo é visual e editável.
+Não existe nada "quebrado" - tudo pode ser ajustado conforme necessário.
+
+
+═════════════════════════════════════════════════════════════════════════════════
+                    Bom trabalho! Seu site ficará incrível! 🚀
+═════════════════════════════════════════════════════════════════════════════════

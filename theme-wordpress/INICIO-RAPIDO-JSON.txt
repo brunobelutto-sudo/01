@@ -1,0 +1,109 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                      ⚡ INÍCIO RÁPIDO - 5 MINUTOS ⚡                          ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+PASSO 1: PREPARAR O ARQUIVO JSON
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Arquivo: elementor-template-peak-fresh.json
+✓ Guarde em um local seguro
+✓ Não altere a extensão (.json é importante!)
+
+
+PASSO 2: INSTALAR ELEMENTOR (se ainda não tiver)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WordPress → Plugins → Adicionar novo
+Pesquise: "Elementor Page Builder"
+Instale e ative
+⏱️ Tempo: 2-3 minutos
+
+
+PASSO 3: IMPORTAR O TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WordPress → Elementor → Meus Modelos
+2. Botão "Importar Modelos" (canto superior)
+3. Selecione: elementor-template-peak-fresh.json
+4. Clique "Importar"
+5. Pronto! Template importado ✓
+
+
+PASSO 4: CRIAR UMA PÁGINA COM O TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WordPress → Páginas → Adicionar nova
+2. Nome: "Início" (ou outro nome)
+3. Clique "Editar com Elementor"
+4. Clique em "Modelos" (ícone de documento no painel esquerdo)
+5. Procure por "Peak Fresh"
+6. Clique e selecione o template
+7. Página carregada! 🎉
+
+
+PASSO 5: CUSTOMIZAR SEU SITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MUDAR TEXTOS:
+Double-click no texto que quer mudar
+Digite o novo texto
+Pronto!
+
+MUDAR CORES:
+Clique em qualquer elemento
+Painel direito → "Estilo"
+Mude a cor clicando na cor
+Aplique ao todo ou elemento
+
+TROCAR IMAGENS:
+Clique na imagem
+Painel direito → "Conteúdo"
+Botão "Trocar imagem"
+Upload a nova imagem
+
+EDITAR BOTÕES:
+Clique no botão
+Painel direito → "Link"
+Mude o URL
+Altere o texto se necessário
+
+
+PASSO 6: PUBLICAR SEU SITE
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Finalizou as edições? ✓
+2. Clique em "PUBLICAR" (botão azul no canto superior direito)
+3. Seu site está VIVO! 🚀
+
+
+═════════════════════════════════════════════════════════════════════════════════
+
+⏱️ TEMPO TOTAL: 5-10 MINUTOS
+
+Não precisa saber código!
+Não precisa de conhecimento técnico!
+Tudo é visual e intuitivo! 🎨
+
+
+PRÓXIMAS CUSTOMIZAÇÕES (OPCIONAL):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Adicionar mais produtos no cardápio
+• Mudar as imagens dos produtos
+• Editar descrições
+• Atualizar números de WhatsApp
+• Adicionar novas seções
+• Mudar toda a paleta de cores
+
+
+DÚVIDAS? VEJA O ARQUIVO COMPLETO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Leia: GUIA-IMPORTAR-ELEMENTOR-JSON.txt
+Tem tudo explicado com detalhes! 📚
+
+
+═════════════════════════════════════════════════════════════════════════════════
+                       Seu site Peak Fresh está pronto! ✨
+═════════════════════════════════════════════════════════════════════════════════
