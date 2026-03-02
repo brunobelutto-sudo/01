@@ -1,0 +1,260 @@
+═══════════════════════════════════════════════════════════════════════════════
+  TEMA WORDPRESS PEAK FRESH - GUIA DE INSTALAÇÃO E CUSTOMIZAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+Bem-vindo ao Tema Peak Fresh! Este é um tema WordPress totalmente customizável
+desenvolvido para lojas de açaí com suporte completo a Elementor.
+
+═══════════════════════════════════════════════════════════════════════════════
+1. REQUISITOS DO SISTEMA
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ WordPress 6.0 ou superior
+✓ PHP 7.4 ou superior
+✓ Elementor (recomendado: versão 3.10 ou superior)
+✓ Pelo menos 50MB de espaço em disco
+
+═══════════════════════════════════════════════════════════════════════════════
+2. INSTALAÇÃO DO TEMA
+═══════════════════════════════════════════════════════════════════════════════
+
+OPÇÃO A: VIA PAINEL DO WORDPRESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Acesse: Painel → Aparência → Temas
+2. Clique em "Adicionar novo"
+3. Clique em "Enviar tema"
+4. Selecione o arquivo .zip do tema
+5. Clique em "Instalar agora"
+6. Após a instalação, clique em "Ativar"
+
+OPÇÃO B: VIA FTP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Extraia a pasta "peak-fresh" do arquivo .zip
+2. Conecte via FTP ao seu servidor
+3. Navegue até: wp-content/themes/
+4. Faça upload da pasta "peak-fresh"
+5. Acesse Painel → Aparência → Temas
+6. Procure por "Peak Fresh" e clique em "Ativar"
+
+═══════════════════════════════════════════════════════════════════════════════
+3. ESTRUTURA DO TEMA
+═══════════════════════════════════════════════════════════════════════════════
+
+peak-fresh/
+├── style.css              ← CSS do tema (EDITAR AQUI para cores/estilos)
+├── functions.php          ← Funções do tema (hooks e features)
+├── header.php             ← Cabeçalho (topo do site)
+├── footer.php             ← Rodapé (baixo do site)
+├── index.php              ← Página padrão
+├── front-page.php         ← Página inicial
+├── js/
+│   └── main.js            ← JavaScript customizado
+├── template-parts/        ← Templates reutilizáveis
+│   ├── content.php
+│   ├── content-page.php
+│   └── content-none.php
+├── screenshot.png         ← Imagem do tema
+
+═══════════════════════════════════════════════════════════════════════════════
+4. PRIMEIROS PASSOS APÓS INSTALAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+PASSO 1: CONFIGURAR IDENTIDADE DO SITE
+────────────────────────────────────────────────────────────────────────────
+
+1. Vá para: Painel → Configurações → Geral
+2. Configure:
+   - Título do site: "Peak Fresh Açaí" (ou seu nome)
+   - Slogan: "Açaí Fresco e Saudável"
+   - URL: Seu domínio
+   - Fuso horário: São Paulo
+
+PASSO 2: ADICIONAR LOGO
+────────────────────────────────────────────────────────────────────────────
+
+1. Vá para: Painel → Aparência → Personalizar
+2. Clique em "Identidade do site"
+3. Upload seu logo em "Logotipo"
+4. Configure o tamanho da logo
+5. Salve as alterações
+
+PASSO 3: CONFIGURAR MENU
+────────────────────────────────────────────────────────────────────────────
+
+1. Crie um menu em: Painel → Aparência → Menus
+   - Cardápio
+   - Benefícios
+   - Sobre
+   - Contato
+
+2. Atribua o menu a "Menu Principal"
+
+PASSO 4: CRIAR PÁGINA INICIAL COM ELEMENTOR
+────────────────────────────────────────────────────────────────────────────
+
+1. Crie uma página nova: Painel → Páginas → Adicionar nova
+2. Nomeie como "Início"
+3. Clique em "Editar com Elementor"
+4. Arraste e solte elementos para criar seu layout
+5. Configure a página em: Configurações → Leitura → Página Estática
+
+═══════════════════════════════════════════════════════════════════════════════
+5. CUSTOMIZAÇÃO DE CORES
+═══════════════════════════════════════════════════════════════════════════════
+
+Todas as cores estão definidas no arquivo `style.css`.
+
+Procure pela seção `:root` e modifique:
+
+  :root {
+    --purple-primary: #7c2bbf;        ← Cor principal (roxo)
+    --purple-secondary: #a064d2;      ← Cor secundária
+    --lilac-light: #f8f4ff;           ← Fundo claro
+    --dark-purple: #2d1446;           ← Texto escuro
+    --brand-dark: #1a1823;            ← Fundo escuro
+    --gray-purple: #645078;           ← Cinza
+    --white: #ffffff;                 ← Branco
+    --green-whatsapp: #25d366;        ← Verde WhatsApp
+  }
+
+EXEMPLO: Para mudar a cor roxa para azul:
+  --purple-primary: #2563eb;
+
+═══════════════════════════════════════════════════════════════════════════════
+6. CONFIGURAÇÕES COM ELEMENTOR
+═══════════════════════════════════════════════════════════════════════════════
+
+ADICIONAR PRODUTOS AO CARDÁPIO:
+───────────────────────────────────────────────────────────────────────────
+
+1. Vá para: Painel → Produtos
+2. Clique em "Adicionar novo"
+3. Preencha:
+   - Título: "Açaí Tropical"
+   - Descrição: "Açaí com morango, banana..."
+   - Imagem destacada: Upload da imagem
+   - Campos customizados:
+     * produto_preco_pequeno: 18.99
+     * produto_preco_grande: 24.99
+     * produto_badge: "Mais Vendido"
+4. Publique o produto
+
+EDITAR SEÇÕES NA PÁGINA INICIAL:
+───────────────────────────────────────────────────────────────────────────
+
+1. Abra a página com Elementor
+2. Clique no ícone de edição de qualquer seção
+3. Ajuste cores, imagens, textos
+4. Salve as alterações
+
+═══════════════════════════════════════════════════════════════════════════════
+7. CONFIGURAÇÕES IMPORTANTES
+═══════════════════════════════════════════════════════════════════════════════
+
+NÚMERO DE WHATSAPP:
+───────────────────────────────────────────────────────────────────────────
+
+Adicione seu número no footer em:
+Painel → Aparência → Personalizar → Configurações do Tema → Contato
+
+BANNER DE URGÊNCIA:
+───────────────────────────────────────────────────────────────────────────
+
+Customize a mensagem no arquivo `header.php`:
+  Procure por: `get_theme_mod('peak_fresh_urgency_banner_text')`
+
+═══════════════════════════════════════════════════════════════════════════════
+8. PLUGINS RECOMENDADOS
+═══════════════════════════════════════════════════════════════════════════════
+
+ESSENCIAIS:
+✓ Elementor (versão gratuita ou Pro)
+✓ WooCommerce (se quiser loja online)
+✓ Yoast SEO (otimização para buscas)
+
+OPCIONAIS:
+○ Contact Form 7 (formulários)
+○ Akismet (anti-spam)
+○ WP Rocket (otimização de velocidade)
+○ UpdraftPlus (backups)
+
+═══════════════════════════════════════════════════════════════════════════════
+9. DICAS DE SEO
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Configure metatítulos e descrições em cada página
+2. Adicione alt text em todas as imagens
+3. Use palavras-chave relevantes no conteúdo
+4. Otimize imagens (comprima antes de fazer upload)
+5. Crie sitemap em Yoast SEO
+6. Registre no Google Search Console
+
+═══════════════════════════════════════════════════════════════════════════════
+10. SUPORTE E AJUDA
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENTAÇÃO:
+- https://wordpress.org/support/theme/peak-fresh
+- https://elementor.com/help/
+
+COMUNIDADE WORDPRESS:
+- https://wordpress.org/forums/
+
+PROBLEMAS COMUNS:
+───────────────────────────────────────────────────────────────────────────
+
+PROBLEMA: Elementor não funciona
+SOLUÇÃO: Instale o plugin Elementor oficial primeiro
+
+PROBLEMA: Páginas em branco
+SOLUÇÃO: Ative modo debug em wp-config.php
+
+PROBLEMA: Imagens não aparecem
+SOLUÇÃO: Verifique permissões de pasta (chmod 755)
+
+═══════════════════════════════════════════════════════════════════════════════
+11. SEGURANÇA
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Mantenha WordPress atualizado
+✓ Atualize todos os plugins regularmente
+✓ Use senhas fortes para administrador
+✓ Faça backups regulares
+✓ Use SSL (HTTPS) em seu domínio
+✓ Limite tentativas de login
+
+═══════════════════════════════════════════════════════════════════════════════
+12. ARQUIVOS EDITAR DIRETAMENTE
+═══════════════════════════════════════════════════════════════════════════════
+
+Se preferir editar código diretamente:
+
+1. Painel → Aparência → Editor de Arquivo de Tema
+2. Ou use um editor de código (VS Code, PhpStorm)
+3. Edite via FTP usando Filezilla
+
+CUIDADO: Sempre faça backup antes de editar!
+
+═══════════════════════════════════════════════════════════════════════════════
+13. PRÓXIMAS ETAPAS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. ✓ Instale e ative o tema
+2. ✓ Adicione logo e cores
+3. ✓ Crie menus
+4. ✓ Adicione produtos
+5. ✓ Configure WhatsApp
+6. ✓ Crie políticas (privacidade, termos)
+7. ✓ Otimize para móvel (verificar responsividade)
+8. ✓ Faça testes de velocidade
+9. ✓ Configure analytics
+10. ✓ Lance o site!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Pronto! Seu tema Peak Fresh está instalado e pronto para uso.
+Boa sorte com seu negócio de açaí! 🍇
+
+═══════════════════════════════════════════════════════════════════════════════

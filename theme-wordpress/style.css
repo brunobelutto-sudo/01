@@ -1,0 +1,699 @@
+/*!
+Theme Name: Peak Fresh - Açaí Shop
+Theme URI: https://peakfresh.com.br
+Author: Peak Fresh
+Author URI: https://peakfresh.com.br
+Description: Tema WordPress customizável para loja de açaí com suporte total a Elementor
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: peak-fresh
+Domain Path: /languages
+
+Este tema foi desenvolvido com foco em customização total via Elementor.
+Edite qualquer elemento diretamente no editor visual do WordPress.
+*/
+
+:root {
+  /* Peak Fresh Brand Colors */
+  --purple-primary: #7c2bbf;
+  --purple-secondary: #a064d2;
+  --lilac-light: #f8f4ff;
+  --dark-purple: #2d1446;
+  --brand-dark: #1a1823;
+  --gray-purple: #645078;
+  --white: #ffffff;
+  --green-whatsapp: #25d366;
+  --text-dark: #1a1a1a;
+  --text-light: #666666;
+  --border-color: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--lilac-light);
+  line-height: 1.6;
+}
+
+/* ============================================
+   TIPOGRAFIA
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: var(--dark-purple);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--purple-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--purple-secondary);
+}
+
+/* ============================================
+   CONTAINER & LAYOUT
+   ============================================ */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 40px 20px;
+  }
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: var(--purple-primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 43, 191, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--purple-primary);
+  border: 2px solid var(--purple-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--purple-primary);
+  color: var(--white);
+}
+
+.btn-whatsapp {
+  background-color: var(--green-whatsapp);
+  color: var(--white);
+}
+
+.btn-whatsapp:hover {
+  background-color: #20ba57;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(124, 43, 191, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--dark-purple);
+}
+
+.card-description {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--purple-primary);
+}
+
+/* ============================================
+   HEADER & NAVEGAÇÃO
+   ============================================ */
+
+header {
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--purple-primary);
+}
+
+.logo img {
+  max-height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--purple-primary);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ============================================
+   SEÇÕES PRINCIPAIS
+   ============================================ */
+
+.hero-section {
+  background: linear-gradient(135deg, var(--lilac-light) 0%, rgba(124, 43, 191, 0.1) 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--dark-purple);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   SEÇÃO DE CARDÁPIO
+   ============================================ */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--purple-primary);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+/* ============================================
+   SEÇÃO DE PROMOÇÃO
+   ============================================ */
+
+.promo-section {
+  background: linear-gradient(135deg, var(--purple-primary) 0%, var(--dark-purple) 100%);
+  color: var(--white);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.promo-section h2 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.promo-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* ============================================
+   SEÇÃO DE CONFIANÇA
+   ============================================ */
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.trust-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.trust-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.trust-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.trust-text {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* ============================================
+   SEÇÃO DE ENTREGA
+   ============================================ */
+
+.delivery-section {
+  background: var(--white);
+  padding: 60px 20px;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.delivery-item h3 {
+  color: var(--purple-primary);
+  margin-bottom: 15px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+footer {
+  background: var(--brand-dark);
+  color: var(--white);
+  padding: 60px 20px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--white);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ============================================
+   COMPONENTES FLUTUANTES
+   ============================================ */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: var(--green-whatsapp);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  z-index: 999;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 28px;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* ============================================
+   URGENCY BANNER
+   ============================================ */
+
+.urgency-banner {
+  background: var(--purple-primary);
+  color: var(--white);
+  padding: 12px 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-group {
+    flex-direction: column;
+  }
+
+  .cta-group .btn {
+    width: 100%;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .whatsapp-button {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padding {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .trust-grid,
+  .delivery-grid {
+    gap: 15px;
+  }
+}
+
+/* ============================================
+   COMPATIBILIDADE ELEMENTOR
+   ============================================ */
+
+.elementor-widget-container {
+  position: relative;
+}
+
+.elementor-section {
+  position: relative;
+}
+
+.elementor-column {
+  position: relative;
+}
+
+/* Certifique-se que os estilos do Elementor não são sobrescritos */
+body.elementor-page {
+  background: var(--lilac-light);
+}
+
+.elementor-page h1,
+.elementor-page h2,
+.elementor-page h3 {
+  color: var(--dark-purple);
+}
+
+/* ============================================
+   UTILITÁRIOS
+   ============================================ */
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Animações suaves */
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

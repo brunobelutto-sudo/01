@@ -1,0 +1,325 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                   📦 PEAK FRESH WORDPRESS THEME - ÍNDICE                   ║
+║                                                                               ║
+║         Tema WordPress Customizável para Lojas de Açaí                     ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════
+📚 ARQUIVOS DE DOCUMENTAÇÃO (LEIA NESTA ORDEM)
+═══════════════════════════════════════════════════════════════════════════════
+
+1. 🟢 COMECE-AQUI.txt (COMECE POR AQUI!)
+   └─ Introdução ao tema
+   └─ Próximos passos
+   └─ Overview geral
+   └─ Dicas para iniciantes
+
+2. 🔵 INSTALE-ME.txt (INSTALAÇÃO)
+   └─ Como instalar o tema
+   └─ Configurações iniciais
+   └─ Como customizar cores
+   └─ Como adicionar produtos
+   └─ Troubleshooting
+
+3. 🟣 GUIA-ELEMENTOR.txt (CRIAR PÁGINAS)
+   └─ Como usar Elementor
+   └─ Widgets essenciais
+   └─ Estrutura de página
+   └─ Dicas de design
+   └─ Responsividade
+
+4. 🟡 readme.txt (INFORMAÇÕES DO TEMA)
+   └─ Descrição completa
+   └─ Requisitos
+   └─ Changelog
+
+═══════════════════════════════════════════════════════════════════════════════
+🔧 ARQUIVOS DO TEMA (PARA EDITAR/CUSTOMIZAR)
+═══════════════════════════════════════════════════════════════════════════════
+
+ESTRUTURA PRINCIPAL:
+│
+├── 📄 style.css
+│   └─ Todos os estilos CSS
+│   └─ Todas as cores definidas aqui
+│   └─ ⭐ EDITAR PARA CUSTOMIZAR CORES
+│
+├── 📄 functions.php
+│   └─ Funções e hooks do tema
+│   └─ Suporte a recursos WordPress
+│   └─ Só editar se souber PHP
+│
+├── 📄 index.php
+│   └─ Página padrão do WordPress
+│   └─ Raramente precisa editar
+│
+├── 📄 front-page.php
+│   └─ Página inicial (homepage)
+│   └─ Pode editar, mas prefira usar Elementor
+│
+├── 📄 header.php
+│   └─ Cabeçalho (topo) do site
+│   └─ Logo e menu principal
+│   └─ Pode editar para customizar topo
+│
+├── 📄 footer.php
+│   └─ Rodapé do site
+│   └─ Contato, redes sociais, links
+│   └─ ⭐ EDITAR COM SEUS DADOS DE CONTATO
+│
+├── 📁 js/
+│   └── main.js
+│       └─ JavaScript customizado
+│       └─ Menu mobile, animações
+│       └─ Não editar a menos que saiba JS
+│
+├── 📁 inc/
+│   └── customizer.php
+│       └─ Painel de customização
+│       └─ Configurações do tema
+│       └─ Não precisa editar
+│
+└── 📁 template-parts/
+    └── content.php
+        └─ Template reutilizável
+        └─ Raramente precisa editar
+
+═══════════════════════════════════════════════════════════════════════════════
+🎨 ARQUIVOS IMPORTANTES PARA CUSTOMIZAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ style.css (PRIORIDADE 1)
+  └─ Procure por: :root {
+  └─ Mude as cores HEX
+  └─ Salve o arquivo
+  └─ Recarregue o site
+
+✓ footer.php (PRIORIDADE 2)
+  └─ Procure por: get_theme_mod
+  └─ Configure WhatsApp, email, endereço
+  └─ Salve o arquivo
+
+✓ functions.php (PRIORIDADE 3)
+  └─ Não precisa editar
+  └─ Contém a lógica do tema
+  └─ Deixe como está
+
+✓ header.php (PRIORIDADE 4)
+  └─ Menu está aqui
+  └─ Logo está aqui
+  └─ Editar se quiser mudar comportamento
+
+═══════════════════════════════════════════════════════════════════════════════
+🚀 COMO USAR ELEMENTOR
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Instale o plugin Elementor
+2. Crie uma página nova
+3. Clique em "Editar com Elementor"
+4. Arraste elementos (widgets) para a página
+5. Configure cores, textos, imagens
+6. Salve a página
+
+VOCÊ NÃO PRECISA:
+  ✗ Editar código PHP
+  ✗ Tocar em arquivos do tema
+  ✗ Conhecer HTML/CSS
+
+TUDO PODE SER FEITO:
+  ✓ Via editor visual do Elementor
+  ✓ Clicando e arrastando elementos
+  ✓ Digitando textos e subindo imagens
+
+═══════════════════════════════════════════════════════════════════════════════
+📋 CHECKLIST - O QUE FAZER PRIMEIRO
+═══════════════════════════════════════════════════════════════════════════════
+
+PASSO 1: INSTALAÇÃO
+  □ Ler "COMECE-AQUI.txt"
+  □ Ler "INSTALE-ME.txt"
+  □ Instalar o tema no WordPress
+  □ Instalar o Elementor
+
+PASSO 2: CONFIGURAÇÃO
+  □ Ativar o tema
+  □ Adicionar logo
+  □ Customizar cores (style.css)
+  □ Configurar WhatsApp (footer.php)
+
+PASSO 3: CONTEÚDO
+  □ Criar menu de navegação
+  □ Criar página inicial com Elementor
+  □ Adicionar produtos
+  □ Criar páginas (sobre, contato, etc)
+
+PASSO 4: FINALIZAÇÃO
+  □ Testar no mobile
+  □ Configurar SEO
+  □ Fazer backup
+  □ Publicar site!
+
+═══════════════════════════════════════════════════════════════════════════════
+🎯 GUIA DE EDIÇÃO RÁPIDA
+═══════════════════════════════════════════════════════════════════════════════
+
+MUDAR COR ROXO PARA AZUL:
+  1. Abra: style.css
+  2. Encontre: --purple-primary: #7c2bbf;
+  3. Mude para: --purple-primary: #2563eb;
+  4. Salve (Ctrl+S)
+  5. Recarregue o site (F5)
+
+ADICIONAR NÚMERO WHATSAPP:
+  1. Abra: footer.php
+  2. Encontre: 5511999999999
+  3. Mude para SEU NÚMERO
+  4. Salve
+  5. Recarregue o site
+
+MUDAR TEXTO DO FOOTER:
+  1. Abra: footer.php
+  2. Procure por: get_theme_mod('peak_fresh_footer
+  3. Mude o texto padrão
+  4. Salve
+
+ADICIONAR NOVA PÁGINA COM ELEMENTOR:
+  1. Painel → Páginas → Adicionar Nova
+  2. Titulo: "Seu Titulo"
+  3. Clique: "Editar com Elementor"
+  4. Arraste elementos
+  5. Salve
+
+═══════════════════════════════════════════════════════════════════════════════
+🔐 DICAS DE SEGURANÇA
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ SEMPRE faça backup antes de editar código
+✓ Mantenha WordPress atualizado
+✓ Atualize plugins regularmente
+✓ Use senhas fortes
+✓ Não compartilhe acesso ao painel
+✓ Limpe cache após fazer mudanças
+
+═══════════════════════════════════════════════════════════════════════════════
+📞 SUPORTE E RECURSOS
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENTAÇÃO OFICIAL:
+  • WordPress: https://wordpress.org/support/
+  • Elementor: https://elementor.com/help/
+
+COMUNIDADES:
+  • Forum WordPress: https://wordpress.org/forums/
+  • Elementor Community: https://elementor.com/community/
+
+YOUTUBE:
+  • Canal Elementor: https://www.youtube.com/c/elementor
+  • WordPress Brasil: Procure no YouTube
+
+═══════════════════════════════════════════════════════════════════════════════
+⚙️  CONFIGURAÇÕES ADICIONAIS (AVANÇADO)
+═══════════════════════════════════════════════════════════════════════════════
+
+Painel → Aparência → Personalizar
+
+Você verá opções para:
+  • Cores do tema
+  • Banner de urgência
+  • Configurações de contato
+  • Texto do footer
+  • E muito mais!
+
+═══════════════════════════════════════════════════════════════════════════════
+🎓 PROGRESSÃO DE APRENDIZADO
+═══════════════════════════════════════════════════════════════════════════════
+
+INICIANTE (SEMANA 1):
+  ✓ Instalar tema e Elementor
+  ✓ Customizar cores básicas
+  ✓ Criar 2-3 páginas com Elementor
+  ✓ Adicionar produtos
+  ✓ Configurar contato
+
+INTERMEDIÁRIO (SEMANA 2-4):
+  ✓ Aprender mais widgets do Elementor
+  ✓ Criar layouts complexos
+  ✓ Otimizar para SEO
+  ✓ Adicionar mais funcionalidades
+  ✓ Integrar formas de pagamento
+
+AVANÇADO (MÊS 2+):
+  ✓ Editar código CSS/PHP
+  ✓ Criar widgets customizados
+  ✓ Implementar WooCommerce
+  ✓ Adicionar funcionalidades custom
+  ✓ Otimizar performance
+
+═══════════════════════════════════════════════════════════════════════════════
+❓ PERGUNTAS FREQUENTES
+═══════════════════════════════════════════════════════════════════════════════
+
+P: Preciso saber código para usar este tema?
+R: NÃO! Use Elementor para tudo. Código é opcional.
+
+P: Posso mudar as cores?
+R: SIM! Edite style.css ou use o Customizer.
+
+P: Como adiciono novos produtos?
+R: Painel → Produtos → Adicionar Novo (ou use Elementor)
+
+P: O tema é compatível com WooCommerce?
+R: SIM! Instale e configure WooCommerce.
+
+P: Posso usar meu próprio logo?
+R: SIM! Painel → Aparência → Personalizar → Logo
+
+P: Como faço um backup?
+R: Use plugin UpdraftPlus (grátis)
+
+P: Preciso comprar extensões?
+R: NÃO é obrigatório. Elementor grátis já é poderoso.
+
+═══════════════════════════════════════════════════════════════════════════════
+✨ RESUMO DO PACOTE
+═══════════════════════════════════════════════════════════════════════════════
+
+O que você recebeu:
+
+✓ Tema WordPress profissional
+✓ 100% customizável
+✓ Compatível com Elementor
+✓ Documentação completa
+✓ Código bem organizado
+✓ Suporte a mobile
+✓ Otimizado para SEO
+✓ Pronto para usar!
+
+Tudo que você precisa para:
+
+✓ Criar site de açaí
+✓ Vender online
+✓ Receber pedidos
+✓ Gerenciar conteúdo
+✓ Parecer profissional
+
+═══════════════════════════════════════════════════════════════════════════════
+🎉 PRÓXIMO PASSO
+═══════════════════════════════════════════════════════════════════════════════
+
+Você está pronto para começar!
+
+1. Leia: COMECE-AQUI.txt
+2. Leia: INSTALE-ME.txt
+3. Instale o tema
+4. Customize conforme necessário
+5. Divirta-se criando seu site!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Boa sorte! 🚀
+
+Seu site profissional está a poucos passos!
+
+═══════════════════════════════════════════════════════════════════════════════
