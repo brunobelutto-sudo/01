@@ -24,7 +24,7 @@ export function Footer() {
                 className="brightness-0 invert mx-auto lg:mx-0 mb-4"
               />
               <p className="text-white/60 text-sm max-w-xs mx-auto lg:mx-0">
-                O acai mais gostoso de Marilia, feito com ingredientes selecionados e muito carinho.
+                O açaí mais gostoso de Marília, feito com ingredientes selecionados e muito carinho.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row lg:flex-col gap-4 sm:gap-8 lg:gap-4">
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="w-5 h-5 text-purple-primary flex-shrink-0" />
-                <span className="text-sm">Marilia - SP</span>
+                <span className="text-sm">Marília - SP</span>
               </div>
               <div className="flex items-center gap-3 text-white/80">
                 <Clock className="w-5 h-5 text-purple-primary flex-shrink-0" />
@@ -77,10 +77,10 @@ export function Footer() {
           <div className="border-t border-white/10 pt-6 lg:pt-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
               <p className="text-white/40 text-xs sm:text-sm">
-                © {new Date().getFullYear()} Peak Fresh Acai. Todos os direitos reservados.
+                © {new Date().getFullYear()} Peak Fresh Açaí. Todos os direitos reservados.
               </p>
               <p className="text-white/40 text-xs sm:text-sm">
-                Feito com amor em Marilia - SP
+                Feito com amor em Marília - SP
               </p>
             </div>
           </div>

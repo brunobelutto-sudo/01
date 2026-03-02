@@ -31,7 +31,7 @@ export function DeliverySection() {
                     Entregamos em toda
                   </h2>
                   <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl text-purple-primary">
-                    Marilia - SP
+                    Marília - SP
                   </h2>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export function DeliverySection() {
                   </div>
                   <div>
                     <p className="font-semibold text-brand-dark text-sm sm:text-base">~30 minutos</p>
-                    <p className="text-xs sm:text-sm text-gray-purple">Tempo medio</p>
+                    <p className="text-xs sm:text-sm text-gray-purple">Tempo médio</p>
                   </div>
                 </div>
               </div>

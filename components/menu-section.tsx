@@ -10,7 +10,7 @@ const WHATSAPP_NUMBER = "5514997851670"
 const products = [
   {
     name: "Avalanche Tropical",
-    description: "Acai com morango, banana, granola crocante, leite em po e leite condensado.",
+    description: "Açaí com morango, banana, granola crocante, leite em pó e leite condensado.",
     price300: 18.99,
     price500: 24.99,
     image: "/images/avalanche-tropical-logo.png",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     name: "Nevasca de Morango",
-    description: "Acai batido com morango, creme de Ninho, leite em po e condensado.",
+    description: "Açaí batido com morango, creme de Ninho, leite em pó e condensado.",
     price300: 18.99,
     price500: 24.99,
     image: "/images/nevasca-morango-logo.png",
@@ -27,7 +27,7 @@ const products = [
   },
   {
     name: "Nevasca Branca",
-    description: "Acai com Bis branco, creme de Ninho, leite em po e condensado.",
+    description: "Açaí com Bis branco, creme de Ninho, leite em pó e condensado.",
     price300: 18.99,
     price500: 24.99,
     image: "/images/nevasca-branca-logo.png",
@@ -35,7 +35,7 @@ const products = [
   },
   {
     name: "Avalanche Negra",
-    description: "Acai com Bis preto e Nutella, leite em po Ninho e condensado.",
+    description: "Açaí com Bis preto e Nutella, leite em pó Ninho e condensado.",
     price300: 19.99,
     price500: 27.99,
     image: "/images/avalanche-negra-logo.png",
@@ -44,7 +44,7 @@ const products = [
   },
   {
     name: "Morangotella",
-    description: "Acai com morango e Nutella, leite em po Ninho e condensado.",
+    description: "Açaí com morango e Nutella, leite em pó Ninho e condensado.",
     price300: 19.99,
     price500: 27.99,
     image: "/images/morangotella-logo.png",
@@ -52,7 +52,7 @@ const products = [
   },
   {
     name: "Bananatella",
-    description: "Acai com banana e Nutella, leite em po Ninho e condensado.",
+    description: "Açaí com banana e Nutella, leite em pó Ninho e condensado.",
     price300: 19.99,
     price500: 27.99,
     image: "/images/bananatella-logo.png",
@@ -90,13 +90,13 @@ export function MenuSection() {
         <div className="text-center mb-8 sm:mb-12">
           <span className="inline-flex items-center gap-2 text-purple-primary text-sm font-medium mb-3">
             <Flame className="w-4 h-4" />
-            Cardapio Completo
+            Cardápio Completo
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-white mb-2">
             Escolha o seu
           </h2>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-purple-primary">
-            acai favorito
+            açaí favorito
           </h2>
         </div>
 
@@ -191,7 +191,7 @@ export function MenuSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-8 sm:mt-12">
           <p className="text-white/60 text-sm mb-4">
-            Nao achou o que queria? Monte seu acai personalizado!
+            Não achou o que queria? Monte seu açaí personalizado!
           </p>
           <Button
             asChild
@@ -199,13 +199,13 @@ export function MenuSection() {
             className="bg-transparent border-purple-primary text-purple-primary hover:bg-purple-primary hover:text-white rounded-full px-6 py-5"
           >
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Oi! Quero montar um acai personalizado!')}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Oi! Quero montar um açaí personalizado!')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />
-              Montar acai personalizado
+              Montar açaí personalizado
             </a>
           </Button>
         </div>

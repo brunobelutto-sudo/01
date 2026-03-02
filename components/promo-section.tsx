@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { MessageCircle, Calendar, Gift, AlertCircle } from "lucide-react"
 
 const WHATSAPP_NUMBER = "5514997851670"
-const WHATSAPP_MESSAGE = encodeURIComponent("Oi! Quero aproveitar a promocao de quarta-feira - acai em dobro!")
+const WHATSAPP_MESSAGE = encodeURIComponent("Oi! Quero aproveitar a promoção de quarta-feira - açaí em dobro!")
 
 export function PromoSection() {
   const today = new Date()
@@ -77,7 +77,7 @@ export function PromoSection() {
             <div className="flex items-start gap-2 text-left bg-yellow-50 rounded-xl p-3 sm:p-4 mb-6 sm:mb-8 max-w-md mx-auto lg:mx-0">
               <AlertCircle className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
               <p className="text-xs sm:text-sm text-yellow-800">
-                Promocao valida apenas as quartas-feiras para pedidos via WhatsApp.
+                Promoção válida apenas as quartas-feiras para pedidos via WhatsApp.
               </p>
             </div>
 
@@ -94,7 +94,7 @@ export function PromoSection() {
                 className="flex items-center justify-center gap-3"
               >
                 <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-                {isWednesday ? "Aproveitar promocao AGORA" : "Quero essa promocao!"}
+                {isWednesday ? "Aproveitar promoção AGORA" : "Quero essa promoção!"}
               </a>
             </Button>
           </div>

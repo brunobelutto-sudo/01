@@ -86,7 +86,7 @@ export function HeroSection() {
 
             {/* Urgency */}
             <p className="mt-4 text-sm text-gray-purple">
-              Ja são <strong className="text-brand-dark">23 pedidos</strong> somente hoje
+              Já são <strong className="text-brand-dark">23 pedidos</strong> somente hoje
             </p>
           </div>
 
