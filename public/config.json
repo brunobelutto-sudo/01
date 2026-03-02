@@ -1,0 +1,117 @@
+{
+  "branding": {
+    "siteName": "Peak Fresh Açaí",
+    "logo": "/images/logo.png",
+    "primaryColor": "#7C2BBF",
+    "secondaryColor": "#1A1823",
+    "accentColor": "#FFD700",
+    "whatsappNumber": "551999999999",
+    "email": "contato@peakfresh.com.br",
+    "phone": "(19) 99999-9999"
+  },
+  "hero": {
+    "headline": "Açaí Premium com Qualidade Peak Fresh",
+    "subheadline": "Feito na hora, entregue fresquinho. Peça pelo WhatsApp e ganhe 15% OFF!",
+    "cta": "Peça Agora",
+    "image": "/images/hero-acai.png",
+    "urgency": "Já são 23 pedidos somente hoje"
+  },
+  "trust_badges": {
+    "title": "Nossos Diferenciais",
+    "items": [
+      {
+        "icon": "Zap",
+        "text": "Resposta em até 2 minutos"
+      },
+      {
+        "icon": "Clock",
+        "text": "Entrega em ~30 minutos"
+      },
+      {
+        "icon": "Package",
+        "text": "Embalagem 100% segura"
+      },
+      {
+        "icon": "Smile",
+        "text": "Satisfação garantida"
+      }
+    ]
+  },
+  "produtos": [
+    {
+      "id": "avalanche-tropical",
+      "name": "Avalanche Tropical",
+      "description": "Acaí com morango, banana, granola crocante, leite em pó e leite condensado.",
+      "price300": 18.99,
+      "price500": 24.99,
+      "image": "/images/avalanche-tropical-logo.png",
+      "popular": true,
+      "tag": "Mais Pedido"
+    },
+    {
+      "id": "nevasca-morango",
+      "name": "Nevasca de Morango",
+      "description": "Acaí batido com morango, creme de Ninho, leite em pó e condensado.",
+      "price300": 18.99,
+      "price500": 24.99,
+      "image": "/images/nevasca-morango-logo.png",
+      "popular": false,
+      "tag": ""
+    },
+    {
+      "id": "nevasca-branca",
+      "name": "Nevasca Branca",
+      "description": "Acaí com Bis branco, creme de Ninho, leite em pó e condensado.",
+      "price300": 18.99,
+      "price500": 24.99,
+      "image": "/images/nevasca-branca-logo.png",
+      "popular": false,
+      "tag": ""
+    },
+    {
+      "id": "avalanche-negra",
+      "name": "Avalanche Negra",
+      "description": "Acaí com Bis preto e Nutella, leite em pó Ninho e condensado.",
+      "price300": 19.99,
+      "price500": 27.99,
+      "image": "/images/avalanche-negra-logo.png",
+      "popular": true,
+      "tag": "Mais Vendido"
+    },
+    {
+      "id": "morangotella",
+      "name": "Morangotella",
+      "description": "Acaí com morango e Nutella, leite em pó Ninho e condensado.",
+      "price300": 19.99,
+      "price500": 27.99,
+      "image": "/images/morangotella-logo.png",
+      "popular": false,
+      "tag": ""
+    },
+    {
+      "id": "bananatella",
+      "name": "Bananatella",
+      "description": "Acaí com banana e Nutella, leite em pó Ninho e condensado.",
+      "price300": 19.99,
+      "price500": 27.99,
+      "image": "/images/bananatella-logo.png",
+      "popular": false,
+      "tag": ""
+    }
+  ],
+  "secoes": {
+    "promo": {
+      "title": "Acaí em Dobro",
+      "description": "Promoção válida apenas às quartas-feiras para pedidos via WhatsApp.",
+      "discount": "50% em Dobro",
+      "image": "/images/promo.jpg"
+    },
+    "delivery": {
+      "title": "Entregamos com Rapidez e Segurança",
+      "time": "~30 minutos",
+      "timeLabel": "Tempo médio",
+      "freeDelivery": true,
+      "minValue": 30
+    }
+  }
+}
