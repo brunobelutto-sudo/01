@@ -7,7 +7,7 @@ const WHATSAPP_NUMBER = "5514997851670"
 const WHATSAPP_MESSAGE = encodeURIComponent("Oi! Quero fazer meu pedido e garantir meu desconto de 15%!")
 
 const benefits = [
-  { icon: Zap, text: "Resposta em ate 2 minutos" },
+  { icon: Zap, text: "Resposta em até 2 minutos" },
   { icon: CreditCard, text: "Sem taxa de aplicativo" },
   { icon: Check, text: "Pedido direto com a loja" },
 ]
@@ -32,13 +32,13 @@ export function DiscountSection() {
 
           {/* Headline */}
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-white mb-4 leading-tight">
-            Peca pelo WhatsApp
+            Peça pelo WhatsApp
             <br />
             <span className="text-yellow-300">ganhe 15% OFF</span>
           </h2>
 
           <p className="text-base sm:text-lg text-white/80 mb-8 sm:mb-10 max-w-xl mx-auto leading-relaxed">
-            Alem das promoções semanais, quem pede direto conosco no WhatsApp paga menos. Sem intermediarios.
+            Além das promoções semanais, quem pede direto conosco no WhatsApp paga menos. Sem intermediários.
           </p>
 
           {/* Benefits */}
@@ -73,7 +73,7 @@ export function DiscountSection() {
 
           {/* Trust */}
           <p className="mt-6 text-sm text-white/60">
-            Mais de 100 clientes ja aproveitaram esse desconto
+            Mais de 100 clientes já aproveitaram esse desconto
           </p>
         </div>
       </div>

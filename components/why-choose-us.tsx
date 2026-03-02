@@ -9,32 +9,32 @@ const reasons = [
   {
     icon: MessageCircle,
     title: "Atendimento direto",
-    description: "Fale diretamente conosco, sem intermediarios",
+    description: "Fale diretamente conosco, sem intermediários",
   },
   {
     icon: Clock,
     title: "Feito na hora",
-    description: "Preparamos seu acai no momento do pedido",
+    description: "Preparamos seu acaí no momento do pedido",
   },
   {
     icon: Package,
     title: "Embalagem segura",
-    description: "Chega perfeito e fresquinho ate voce",
+    description: "Chega perfeito e fresquinho até você",
   },
   {
     icon: MapPin,
     title: "Marca local",
-    description: "Apoie o comercio de Marilia",
+    description: "Apoie o comércio de Marília",
   },
   {
     icon: Smartphone,
-    title: "Pedido facil",
+    title: "Pedido fácil",
     description: "Em poucos cliques no WhatsApp",
   },
   {
     icon: Heart,
     title: "Feito com carinho",
-    description: "Cada acai preparado com amor",
+    description: "Cada acaí preparado com amor",
   },
 ]
 
@@ -80,7 +80,7 @@ export function WhyChooseUs() {
               Pronto para experimentar?
             </h3>
             <p className="text-white/80 text-sm sm:text-base mb-6">
-              Faca seu pedido agora e ganhe 15% de desconto!
+              Faça seu pedido agora e ganhe 15% de desconto!
             </p>
             
             <Button
