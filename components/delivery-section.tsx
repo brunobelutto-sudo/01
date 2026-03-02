@@ -31,7 +31,7 @@ export function DeliverySection() {
                     Entregamos em toda
                   </h2>
                   <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl text-purple-primary">
-                    Marília - SP
+                    Marilia - SP
                   </h2>
                 </div>
               </div>

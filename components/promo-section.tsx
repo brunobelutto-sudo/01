@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { MessageCircle, Calendar, Gift, AlertCircle } from "lucide-react"
 
 const WHATSAPP_NUMBER = "5514997851670"
-const WHATSAPP_MESSAGE = encodeURIComponent("Oi! Quero aproveitar a promoção de quarta-feira - açaí em dobro!")
+const WHATSAPP_MESSAGE = encodeURIComponent("Oi! Quero aproveitar a promocao de quarta-feira - acai em dobro!")
 
 export function PromoSection() {
   const today = new Date()
@@ -48,11 +48,11 @@ export function PromoSection() {
             {/* Tag */}
             <div className="inline-flex items-center gap-2 bg-purple-primary/10 text-purple-primary text-sm font-medium px-4 py-2 rounded-full mb-4 sm:mb-6">
               <Calendar className="w-4 h-4" />
-              Promocao de Quarta-feira
+              Promoção de Quarta-feira
             </div>
             
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-brand-dark mb-3 sm:mb-4 leading-tight">
-              Acai em
+              Acaí em
               <span className="text-purple-primary"> Dobro</span>
             </h2>
             
@@ -77,7 +77,7 @@ export function PromoSection() {
             <div className="flex items-start gap-2 text-left bg-yellow-50 rounded-xl p-3 sm:p-4 mb-6 sm:mb-8 max-w-md mx-auto lg:mx-0">
               <AlertCircle className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
               <p className="text-xs sm:text-sm text-yellow-800">
-                Promoção válida apenas as quartas-feiras para pedidos via WhatsApp.
+                Promoção válida apenas às quartas-feiras para pedidos via WhatsApp.
               </p>
             </div>
 
@@ -94,7 +94,7 @@ export function PromoSection() {
                 className="flex items-center justify-center gap-3"
               >
                 <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-                {isWednesday ? "Aproveitar promoção AGORA" : "Quero essa promoção!"}
+                {isWednesday ? "Aproveitar promocao AGORA" : "Quero essa promocao!"}
               </a>
             </Button>
           </div>
