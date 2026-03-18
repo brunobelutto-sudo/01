@@ -11,7 +11,8 @@ interface Produto {
   name: string;
   description: string;
   price300: number;
-  price500: number;
+  price550: number;
+  price770: number;
   image: string;
   popular: boolean;
   tag: string;
@@ -62,7 +63,8 @@ export default function AdminProdutosPage() {
       name: 'Novo Produto',
       description: 'Descrição do produto',
       price300: 0,
-      price500: 0,
+      price550: 0,
+      price770: 0,
       image: '',
       popular: false,
       tag: '',
@@ -150,7 +152,7 @@ export default function AdminProdutosPage() {
                     />
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-3 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-white mb-2">
                         Preço 300ml
@@ -171,16 +173,34 @@ export default function AdminProdutosPage() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-white mb-2">
-                        Preço 500ml
+                        Preço 550ml
                       </label>
                       <input
                         type="number"
                         step="0.01"
-                        value={produto.price500}
+                        value={produto.price550}
                         onChange={(e) =>
                           updateProduto(
                             produto.id,
-                            'price500',
+                            'price550',
+                            parseFloat(e.target.value)
+                          )
+                        }
+                        className="w-full px-4 py-3 bg-white/5 border border-purple-primary/20 rounded-lg text-white focus:outline-none focus:border-purple-primary/60"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">
+                        Preço 770ml
+                      </label>
+                      <input
+                        type="number"
+                        step="0.01"
+                        value={produto.price770}
+                        onChange={(e) =>
+                          updateProduto(
+                            produto.id,
+                            'price770',
                             parseFloat(e.target.value)
                           )
                         }

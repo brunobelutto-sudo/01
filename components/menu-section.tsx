@@ -12,7 +12,8 @@ const products = [
     name: "Avalanche Tropical",
     description: "Acaí com morango, banana, granola crocante, leite em pó e leite condensado.",
     price300: 18.99,
-    price500: 24.99,
+    price550: 24.99,
+    price770: 31.99,
     image: "/images/avalanche-tropical-logo.png",
     popular: true,
     tag: "Mais Pedido",
@@ -21,7 +22,8 @@ const products = [
     name: "Nevasca de Morango",
     description: "Acaí batido com morango, creme de Ninho, leite em pó e condensado.",
     price300: 18.99,
-    price500: 24.99,
+    price550: 24.99,
+    price770: 31.99,
     image: "/images/nevasca-morango-logo.png",
     popular: false,
   },
@@ -29,7 +31,8 @@ const products = [
     name: "Nevasca Branca",
     description: "Acaí com Bis branco, creme de Ninho, leite em pó e condensado.",
     price300: 18.99,
-    price500: 24.99,
+    price550: 24.99,
+    price770: 31.99,
     image: "/images/nevasca-branca-logo.png",
     popular: false,
   },
@@ -37,7 +40,8 @@ const products = [
     name: "Avalanche Negra",
     description: "Acaí com Bis preto e Nutella, leite em pó Ninho e condensado.",
     price300: 19.99,
-    price500: 27.99,
+    price550: 27.99,
+    price770: 34.99,
     image: "/images/avalanche-negra-logo.png",
     popular: true,
     tag: "Mais Vendido",
@@ -46,7 +50,8 @@ const products = [
     name: "Morangotella",
     description: "Acaí com morango e Nutella, leite em pó Ninho e condensado.",
     price300: 19.99,
-    price500: 27.99,
+    price550: 27.99,
+    price770: 34.99,
     image: "/images/morangotella-logo.png",
     popular: false,
   },
@@ -54,7 +59,8 @@ const products = [
     name: "Bananatella",
     description: "Acaí com banana e Nutella, leite em pó Ninho e condensado.",
     price300: 19.99,
-    price500: 27.99,
+    price550: 27.99,
+    price770: 34.99,
     image: "/images/bananatella-logo.png",
     popular: false,
   },
@@ -104,7 +110,7 @@ export function MenuSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
           {products.map((product) => {
             const selectedSize = getSelectedSize(product.name)
-            const currentPrice = selectedSize === '300ml' ? product.price300 : product.price500
+            const currentPrice = selectedSize === '300ml' ? product.price300 : selectedSize === '550ml' ? product.price550 : product.price770
 
             return (
               <div
@@ -154,14 +160,24 @@ export function MenuSection() {
                       300ml
                     </button>
                     <button
-                      onClick={() => handleSizeSelect(product.name, '500ml')}
+                      onClick={() => handleSizeSelect(product.name, '550ml')}
                       className={`flex-1 py-2 px-3 rounded-xl text-sm font-medium transition-all ${
-                        selectedSize === '500ml'
+                        selectedSize === '550ml'
                           ? 'bg-purple-primary text-white'
                           : 'bg-white/10 text-white/70 hover:bg-white/20'
                       }`}
                     >
-                      500ml
+                      550ml
+                    </button>
+                    <button
+                      onClick={() => handleSizeSelect(product.name, '770ml')}
+                      className={`flex-1 py-2 px-3 rounded-xl text-sm font-medium transition-all ${
+                        selectedSize === '770ml'
+                          ? 'bg-purple-primary text-white'
+                          : 'bg-white/10 text-white/70 hover:bg-white/20'
+                      }`}
+                    >
+                      770ml
                     </button>
                   </div>
 

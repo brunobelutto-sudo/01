@@ -43,7 +43,8 @@
       "name": "Avalanche Tropical",
       "description": "Acaí com morango, banana, granola crocante, leite em pó e leite condensado.",
       "price300": 18.99,
-      "price500": 24.99,
+      "price550": 24.99,
+      "price770": 31.99,
       "image": "/images/avalanche-tropical-logo.png",
       "popular": true,
       "tag": "Mais Pedido"
@@ -53,7 +54,8 @@
       "name": "Nevasca de Morango",
       "description": "Acaí batido com morango, creme de Ninho, leite em pó e condensado.",
       "price300": 18.99,
-      "price500": 24.99,
+      "price550": 24.99,
+      "price770": 31.99,
       "image": "/images/nevasca-morango-logo.png",
       "popular": false,
       "tag": ""
@@ -63,7 +65,8 @@
       "name": "Nevasca Branca",
       "description": "Acaí com Bis branco, creme de Ninho, leite em pó e condensado.",
       "price300": 18.99,
-      "price500": 24.99,
+      "price550": 24.99,
+      "price770": 31.99,
       "image": "/images/nevasca-branca-logo.png",
       "popular": false,
       "tag": ""
@@ -73,7 +76,8 @@
       "name": "Avalanche Negra",
       "description": "Acaí com Bis preto e Nutella, leite em pó Ninho e condensado.",
       "price300": 19.99,
-      "price500": 27.99,
+      "price550": 27.99,
+      "price770": 34.99,
       "image": "/images/avalanche-negra-logo.png",
       "popular": true,
       "tag": "Mais Vendido"
@@ -83,7 +87,8 @@
       "name": "Morangotella",
       "description": "Acaí com morango e Nutella, leite em pó Ninho e condensado.",
       "price300": 19.99,
-      "price500": 27.99,
+      "price550": 27.99,
+      "price770": 34.99,
       "image": "/images/morangotella-logo.png",
       "popular": false,
       "tag": ""
@@ -93,7 +98,8 @@
       "name": "Bananatella",
       "description": "Acaí com banana e Nutella, leite em pó Ninho e condensado.",
       "price300": 19.99,
-      "price500": 27.99,
+      "price550": 27.99,
+      "price770": 34.99,
       "image": "/images/bananatella-logo.png",
       "popular": false,
       "tag": ""
