@@ -2,90 +2,107 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MessageCircle, Calendar, Gift, AlertCircle } from "lucide-react"
+import { MessageCircle, Calendar, Zap, Clock } from "lucide-react"
 
 const WHATSAPP_NUMBER = "5514997851670"
-const WHATSAPP_MESSAGE = encodeURIComponent("Oi! Quero aproveitar a promocao de quarta-feira - acai em dobro!")
+const WHATSAPP_MESSAGE = encodeURIComponent("Oi! Quero aproveitar a promoção especial de quarta-feira!")
 
 export function PromoSection() {
   const today = new Date()
-  const isWednesday = today.getDay() === 3
+  const dayOfWeek = today.getDay()
+  const daysUntilWednesday = (3 - dayOfWeek + 7) % 7 || 7
 
   return (
-    <section className="bg-lilac-light py-12 sm:py-16 lg:py-20 relative overflow-hidden">
-      {/* Decorative Background */}
+    <section className="bg-brand-dark py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+      {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-20 -left-20 w-64 h-64 bg-purple-primary/5 rounded-full blur-3xl" />
-        <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-purple-primary/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 -left-1/3 w-96 h-96 bg-purple-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -bottom-1/3 -right-1/4 w-96 h-96 bg-yellow-300/5 rounded-full blur-3xl animate-pulse" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           
           {/* Promo Image */}
-          <div className="w-full lg:w-1/2 order-2 lg:order-1">
-            <div className="relative max-w-md mx-auto lg:mx-0">
-              {/* Live Badge */}
-              {isWednesday && (
-                <div className="absolute -top-2 -right-2 sm:top-4 sm:right-4 z-10 flex items-center gap-2 bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-full animate-pulse">
-                  <span className="w-2 h-2 bg-white rounded-full" />
-                  HOJE
+          <div className="order-2 lg:order-1">
+            <div className="relative max-w-md mx-auto">
+              {daysUntilWednesday === 7 && (
+                <div className="absolute -top-3 -right-3 sm:top-6 sm:right-6 z-20 flex items-center gap-2 bg-yellow-300 text-brand-dark text-xs font-bold px-4 py-2 rounded-full animate-bounce">
+                  <Zap className="w-4 h-4" />
+                  DISPONÍVEL HOJE
                 </div>
               )}
               
-              <Image
-                src="/images/promo.jpg"
-                alt="Promocao acai em dobro"
-                width={500}
-                height={700}
-                className="rounded-2xl sm:rounded-3xl shadow-2xl w-full h-auto"
-              />
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-primary to-yellow-300 rounded-2xl sm:rounded-3xl blur-2xl group-hover:blur-3xl opacity-20 group-hover:opacity-30 transition-all" />
+                <Image
+                  src="/images/promo.jpg"
+                  alt="Promoção especial quarta-feira"
+                  width={500}
+                  height={600}
+                  className="relative rounded-2xl sm:rounded-3xl shadow-2xl w-full h-auto object-cover"
+                />
+              </div>
             </div>
           </div>
 
           {/* Promo Content */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left order-1 lg:order-2">
+          <div className="order-1 lg:order-2">
             {/* Tag */}
-            <div className="inline-flex items-center gap-2 bg-purple-primary/10 text-purple-primary text-sm font-medium px-4 py-2 rounded-full mb-4 sm:mb-6">
+            <div className="inline-flex items-center gap-2 bg-purple-primary/20 border border-purple-primary/40 text-purple-primary text-sm font-bold px-4 py-2 rounded-full mb-4 sm:mb-6 uppercase tracking-wide">
               <Calendar className="w-4 h-4" />
-              Promoção de Quarta-feira
+              Quarta-feira especial
             </div>
             
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-brand-dark mb-3 sm:mb-4 leading-tight">
-              Acaí em
-              <span className="text-purple-primary"> Dobro</span>
+            {/* Headline */}
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-white mb-3 sm:mb-4 leading-tight">
+              Promoção
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-primary via-yellow-300 to-purple-primary">
+                Imperdível
+              </span>
             </h2>
-            
-            {/* Offer Box */}
-            <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg mb-6 sm:mb-8 max-w-md mx-auto lg:mx-0">
-              <div className="flex items-start gap-3 sm:gap-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Gift className="w-5 h-5 sm:w-6 sm:h-6 text-purple-primary" />
+
+            {/* Description */}
+            <p className="text-white/80 text-base sm:text-lg mb-8 leading-relaxed max-w-lg">
+              Toda quarta-feira, aproveite desconto especial em qualquer bebida. Quantidade limitada!
+            </p>
+
+            {/* Offer Cards */}
+            <div className="space-y-4 mb-8">
+              <div className="bg-gradient-to-r from-yellow-300/10 to-transparent border border-yellow-300/30 rounded-xl p-4 sm:p-5 flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-yellow-300/20 border border-yellow-300/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-300" />
                 </div>
-                <div className="text-left">
-                  <p className="text-gray-purple text-sm sm:text-base mb-1">
-                    Na compra de qualquer produto
-                  </p>
-                  <p className="font-display text-xl sm:text-2xl text-brand-dark">
-                    + R$ 7,00 = Copo de 300ml
-                  </p>
+                <div>
+                  <p className="text-yellow-300 font-bold text-sm sm:text-base">Desconto na quarta</p>
+                  <p className="text-white/70 text-xs sm:text-sm">Válido em qualquer tamanho</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-purple-primary/10 to-transparent border border-purple-primary/30 rounded-xl p-4 sm:p-5 flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-primary/20 border border-purple-primary/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-purple-primary" />
+                </div>
+                <div>
+                  <p className="text-purple-primary font-bold text-sm sm:text-base">Entrega rápida</p>
+                  <p className="text-white/70 text-xs sm:text-sm">Preparado na hora</p>
                 </div>
               </div>
             </div>
 
-            {/* Disclaimer */}
-            <div className="flex items-start gap-2 text-left bg-yellow-50 rounded-xl p-3 sm:p-4 mb-6 sm:mb-8 max-w-md mx-auto lg:mx-0">
-              <AlertCircle className="w-4 h-4 text-yellow-600 flex-shrink-0 mt-0.5" />
-              <p className="text-xs sm:text-sm text-yellow-800">
-                Promoção válida apenas às quartas-feiras para pedidos via WhatsApp.
+            {/* Days until info */}
+            {daysUntilWednesday !== 7 && (
+              <p className="text-white/60 text-sm mb-6">
+                Faltam <span className="text-yellow-300 font-bold">{daysUntilWednesday}</span> dia{daysUntilWednesday !== 1 ? 's' : ''} para a próxima promoção
               </p>
-            </div>
+            )}
 
             {/* CTA */}
             <Button
               asChild
               size="lg"
-              className="w-full sm:w-auto bg-green-whatsapp hover:bg-green-whatsapp/90 text-white font-semibold text-base sm:text-lg px-8 py-6 sm:py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full sm:w-auto bg-gradient-to-r from-purple-primary to-purple-primary/80 hover:from-purple-primary/90 hover:to-purple-primary text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.05] active:scale-[0.95]"
             >
               <a
                 href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
@@ -94,7 +111,7 @@ export function PromoSection() {
                 className="flex items-center justify-center gap-3"
               >
                 <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-                {isWednesday ? "Aproveitar promocao AGORA" : "Quero essa promocao!"}
+                Aproveitar promoção
               </a>
             </Button>
           </div>

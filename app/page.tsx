@@ -7,12 +7,14 @@ import { WhyChooseUs } from "@/components/why-choose-us"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { PromoBanner } from "@/components/promo-banner"
+import { LaunchBanner } from "@/components/launch-banner"
+import { TestimonialsSection } from "@/components/testimonials-section"
 
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
-      {/* Urgency Banner - Creates FOMO */}
-      <PromoBanner />
+      {/* Launch Banner - Inaugural Promotion */}
+      <LaunchBanner />
       
       {/* Hero - Value Proposition + Primary CTA */}
       <HeroSection />
@@ -26,10 +28,13 @@ export default function Home() {
       {/* Promo Section - Weekly Deal */}
       <PromoSection />
       
+      {/* Testimonials - Social Proof */}
+      <TestimonialsSection />
+      
       {/* Delivery Info - Address Objections */}
       <DeliverySection />
       
-      {/* Social Proof - Build Trust */}
+      {/* Why Choose Us - 4 Pillars */}
       <WhyChooseUs />
       
       {/* Footer */}

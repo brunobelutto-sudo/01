@@ -40,68 +40,100 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-lilac-light py-12 sm:py-16 lg:py-20">
-      <div className="container mx-auto px-4">
-        
+    <section className="bg-brand-dark py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-0 w-72 h-72 bg-purple-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-300/5 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
-          <h2 className="font-display text-3xl sm:text-4xl text-brand-dark mb-2">
-            Por que pedir na
+        <div className="text-center mb-14 sm:mb-16 lg:mb-20">
+          <p className="text-purple-primary text-sm font-semibold uppercase tracking-widest mb-3 sm:mb-4">
+            O que nos torna especial
+          </p>
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-white mb-4 leading-tight">
+            Quatro pilares de
+            <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-primary to-yellow-300">
+              excelência
+            </span>
           </h2>
-          <h2 className="font-display text-3xl sm:text-4xl text-purple-primary">
-            Peak Fresh?
-          </h2>
+          <p className="text-white/60 max-w-2xl mx-auto text-sm sm:text-base">
+            Cada elemento pensado para oferecer a melhor experiência
+          </p>
         </div>
 
-        {/* Reasons Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 max-w-5xl mx-auto mb-8 sm:mb-12">
-          {reasons.map((reason) => (
-            <div
-              key={reason.title}
-              className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 group"
-            >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-primary/10 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-purple-primary/20 transition-colors">
-                <reason.icon className="w-5 h-5 sm:w-6 sm:h-6 text-purple-primary" />
+        {/* Pillars Grid */}
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto mb-14 sm:mb-16">
+          {pillars.map((pillar, index) => {
+            const Icon = pillar.icon
+            return (
+              <div
+                key={index}
+                className={`group relative bg-gradient-to-br ${pillar.gradient} border border-white/10 hover:border-white/20 rounded-2xl sm:rounded-3xl p-7 sm:p-8 lg:p-10 transition-all duration-300 hover:translate-y-[-4px]`}
+              >
+                {/* Icon background */}
+                <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 opacity-0 group-hover:opacity-20 transition-opacity duration-300">
+                  <Icon className="w-full h-full text-white blur-sm" />
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-white/10 group-hover:border-white/20 transition-all">
+                    <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${pillar.color}`} />
+                  </div>
+
+                  <h3 className="font-display text-lg sm:text-xl lg:text-2xl text-white mb-2 sm:mb-3">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-white/70 text-sm sm:text-base leading-relaxed">
+                    {pillar.description}
+                  </p>
+                </div>
+
+                {/* Border accent */}
+                <div className="absolute inset-0 rounded-2xl sm:rounded-3xl border border-transparent bg-gradient-to-r from-purple-primary/0 via-transparent to-yellow-300/0 group-hover:from-purple-primary/20 group-hover:via-transparent group-hover:to-yellow-300/20 transition-all opacity-0 group-hover:opacity-100 pointer-events-none" />
               </div>
-              <h3 className="font-semibold text-brand-dark text-sm sm:text-base mb-1">
-                {reason.title}
+            )
+          })}
+        </div>
+
+        {/* CTA Section */}
+        <div className="relative max-w-3xl mx-auto">
+          <div className="relative bg-gradient-to-br from-purple-primary/90 to-purple-primary rounded-2xl sm:rounded-3xl overflow-hidden p-8 sm:p-10 lg:p-12 border border-purple-primary/50">
+            {/* Background accent */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-yellow-300/10 rounded-full blur-3xl" />
+            </div>
+
+            <div className="relative z-10">
+              <h3 className="font-display text-2xl sm:text-3xl text-white mb-3 text-center">
+                Aproveite a inauguração
               </h3>
-              <p className="text-xs sm:text-sm text-gray-purple leading-relaxed">
-                {reason.description}
+              <p className="text-white/90 text-sm sm:text-base text-center mb-8">
+                Faça seu pedido agora e ganhe um brinde exclusivo + 20% OFF no próximo pedido
+              </p>
+
+              <Button
+                asChild
+                size="lg"
+                className="w-full sm:w-auto block mx-auto bg-white hover:bg-white/95 text-purple-primary font-bold text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:scale-[1.05] active:scale-[0.95]"
+              >
+                <a
+                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Oi! Quero aproveitar a promoção de inauguração com brinde + 20% OFF!')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fazer Pedido no WhatsApp
+                </a>
+              </Button>
+
+              <p className="text-center text-white/70 text-xs sm:text-sm mt-5">
+                Resposta rápida • Entrega segura • Qualidade garantida
               </p>
             </div>
-          ))}
-        </div>
-
-        {/* CTA Card */}
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-purple-primary rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-center">
-            <h3 className="font-display text-xl sm:text-2xl text-white mb-2">
-              Pronto para experimentar?
-            </h3>
-            <p className="text-white/80 text-sm sm:text-base mb-6">
-              Faça seu pedido agora e ganhe 15% de desconto!
-            </p>
-            
-            <Button
-              asChild
-              size="lg"
-              className="w-full sm:w-auto bg-white hover:bg-white/95 text-purple-primary font-semibold text-base sm:text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Oi! Quero fazer meu pedido e garantir meu desconto de 15%!')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3"
-              >
-                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-                Pedir pelo WhatsApp
-              </a>
-            </Button>
-
-            <p className="mt-4 text-sm text-white/60">
-              (14) 99785-1670
-            </p>
           </div>
         </div>
       </div>
