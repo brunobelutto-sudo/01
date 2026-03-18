@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/hero-section"
 import { TrustBadges } from "@/components/trust-badges"
 import { MenuSection } from "@/components/menu-section"
 import { PromoSection } from "@/components/promo-section"
-import { DiscountSection } from "@/components/discount-section"
 import { DeliverySection } from "@/components/delivery-section"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { Footer } from "@/components/footer"
@@ -26,9 +25,6 @@ export default function Home() {
       
       {/* Promo Section - Weekly Deal */}
       <PromoSection />
-      
-      {/* Discount Section - WhatsApp CTA */}
-      <DiscountSection />
       
       {/* Delivery Info - Address Objections */}
       <DeliverySection />
