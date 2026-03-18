@@ -1,40 +1,39 @@
 "use client"
 
-import { MessageCircle, Clock, Package, MapPin, Smartphone, Heart } from "lucide-react"
+import { Zap, Sparkles, MapPin, Palette, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+// Redesigned with 4 pillars of excellence
 const WHATSAPP_NUMBER = "5514997851670"
 
-const reasons = [
+const pillars = [
   {
-    icon: MessageCircle,
-    title: "Atendimento direto",
-    description: "Fale diretamente conosco, sem intermediários",
+    icon: Sparkles,
+    title: "Qualidade Premium",
+    description: "Ingredientes selecionados com cuidado, preparação impecável em cada pedido",
+    gradient: "from-purple-primary/20 to-yellow-300/10",
+    color: "text-purple-primary"
   },
   {
-    icon: Clock,
-    title: "Feito na hora",
-    description: "Preparamos seu acaí no momento do pedido",
-  },
-  {
-    icon: Package,
-    title: "Embalagem segura",
-    description: "Chega perfeito e fresquinho até você",
+    icon: Zap,
+    title: "Conveniência Total",
+    description: "Pedia no WhatsApp, receba rápido e fresco no seu endereço",
+    gradient: "from-yellow-300/20 to-purple-primary/10",
+    color: "text-yellow-300"
   },
   {
     icon: MapPin,
-    title: "Marca local",
-    description: "Apoie o comércio de Marília",
+    title: "Confiança Local",
+    description: "Marca de Marília comprometida com sua satisfação",
+    gradient: "from-white/10 to-purple-primary/5",
+    color: "text-white"
   },
   {
-    icon: Smartphone,
-    title: "Pedido fácil",
-    description: "Em poucos cliques no WhatsApp",
-  },
-  {
-    icon: Heart,
-    title: "Feito com carinho",
-    description: "Cada acaí preparado com amor",
+    icon: Palette,
+    title: "Sabores Inovadores",
+    description: "Criação constante de novos sabores que impressionam",
+    gradient: "from-yellow-300/15 to-white/10",
+    color: "text-yellow-200"
   },
 ]
 
